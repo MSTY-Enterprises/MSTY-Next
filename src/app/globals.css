@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html{overflow-x: hidden;}
+
+body,
+html {
+
+
+  font-family: "Inter Tight", sans-serif;
+
+margin:0 auto;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.btn {
+  padding: 12px 22px;
+  transition: 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+
+.get-in-touch-button::before,
+.get-in-touch-button::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.get-in-touch-button::before {
+  left: 50%;
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+}
+
+.get-in-touch-button::after {
+  left: 55%;
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #55d0ff;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+}
+
+.get-in-touch-button:hover::before {
+  top: -35%;
+  background-color: #55d0ff;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.get-in-touch-button:hover::after {
+  top: -45%;
+  background-color: #55d0ff;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.get-in-touch-button:hover {
+  border-color: #55d0ff;
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.smooth-spin {
+  animation: rotate 10s linear infinite;
 }
+
+.blog ul li img {
+  width: -webkit-fill-available;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+
+.servs {position: relative; overflow: clip; }
+.servs li{position: sticky; top:0}
+
