@@ -7,8 +7,8 @@ function Uicard({ item, index }) {
   return (
     <>
       <li
-
-        className={` bg-${item.bg} text-${item.text} z-${index * 10} py-15`}
+       style={{backgroundColor: item.bg, color: item.text}}
+        className={`  z-${index * 10} py-15`}
       >
         <div className="container mx-auto flex justify-between items-center max-md:flex-col max-sm:items-start max-sm:p-2 max-md:items-start lg:p-2 ">
           <div className="lft w-8/13 max-sm:w-full max-md:w-full max-md:mb-7">

@@ -1,10 +1,13 @@
+'use client'
 import React from "react";
 import Blogcard from "@/utilites/Blogcard";
-import { data } from "@/store/Blogdata"
 import { GoArrowUpRight } from "react-icons/go";
 import Link from "next/link";
+import { useBlog } from "@/hooks/BlogContext";
 
 function Blog() {
+
+  const { blogs } = useBlog();
   return (
     <>
       <div className=" blog bg-[#f2f2f2] pt-16 pb-16 mb-16 p-2">
@@ -31,7 +34,7 @@ function Blog() {
           </div>
 
           <ul className="flex flex-wrap justify-center items-center w-full mt-9 gap-4.5 ">
-            {data.slice(0,3).map((item, index) => (
+            {blogs.slice(0,3).map((item, index) => (
               <Blogcard key={index} item={item} />
             ))}
 

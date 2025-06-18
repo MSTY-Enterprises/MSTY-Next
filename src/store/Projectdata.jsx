@@ -7,11 +7,31 @@ import lnk3 from '@/assets/images/project-3.jpg'
 import img4 from '@/assets/images/proj-4.jpg'
 import lnk4 from '@/assets/images/door-3.jpg'
 import img5 from '@/assets/images/proj-5.jpg'
-import lnk5 from '@/assets/images/rendrly.png'
+// import lnk5 from '@/assets/images/rendrly.png'
 import img6 from '@/assets/images/care.jpg'
-
+import care from '@/assets/images/care-india.png'
 
 export const data=[
+
+   
+    {
+     
+        img:img5,
+        name: "Satin Neo Dimension",
+       
+    },
+    {
+        
+        img:img6,
+        name: "Care India Welfare Trust",
+        
+    },
+    {
+        link:lnk4,
+        img:img4,
+        name: "Retro Inspired Product",
+        
+    },
     {
         link:lnk1,
         img:img1,
@@ -26,27 +46,10 @@ export const data=[
     {
         link:lnk3,
         img:img3,
-        name: "Parlour",
+        name: "Salon Academy",
       
     },
-    {
-        link:lnk4,
-        img:img4,
-        name: "Retro Inspired Product",
-        
-    },
-    {
-        link:"https://satinneodimensions.com/",
-        img:img5,
-        name: "Satin New Dimension",
-       
-    },
-    {
-        link:"https://careindiawelfaretrust.org/",
-        img:img6,
-        name: "Retro Inspired Product",
-        
-    },
+   
     
     
   

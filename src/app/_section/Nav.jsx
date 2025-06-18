@@ -35,7 +35,7 @@ function Nav() {
           <div className="flex items-center gap-2">
             <IoIosNotificationsOutline className="w-6 h-6" />
             <span className="font-medium">
-              We Will Grow Your Small Business To The Next Level
+              We Will Grow Your Business To The Next Level
             </span>
           </div>
           <ul className="flex flex-col sm:flex-row gap-2 sm:gap-6 font-medium text-sm">
@@ -51,7 +51,7 @@ function Nav() {
             <li className="flex items-center gap-2">
               <LuPhone className="w-5 h-5" />
               <a href="tel:+919910741417" className="hover:underline">
-                +91 991 0741 417
+                +91 99107 41417
               </a>
             </li>
           </ul>

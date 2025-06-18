@@ -72,7 +72,7 @@ function Contact() {
 
             <ul className="text-white text-lg space-y-3">
               <li className="mb-4.5">
-                <h2 className="text-[15px] text-[#b4b4b4] font-medium mb-2.5 max-sm:mb-0.5">Phone No & Whatshapp No</h2>
+                <h2 className="text-[15px] text-[#b4b4b4] font-medium mb-2.5 max-sm:mb-0.5">Phone No & Whatsapp No</h2>
                 <a  href="tel:+919910741417" className=" max-sm:text-2xl hover:bg-gradient-to-r hover:from-[#2684ff] hover:to-[#00ace5] 
                hover:bg-clip-text hover:text-transparent 
                transition-all duration-500 ease-in-out text-3xl ">
