@@ -4,18 +4,18 @@ import Link from 'next/link'
 
 
 function Blogcard({ item, index }) {
- 
+
   return (
     <li className=' hover:bg-[#e1e1e1] group max-sm:w-full lg:w-8/25 md:w-2/5  rounded-2xl    '>
       <Link href={`/blogs/${item.slug}`}>
         <div className="img mb-6 overflow-hidden rounded-2xl group-hover:rounded-b-none">
-         <Image
+          <Image
             src={`${process.env.NEXT_PUBLIC_IMG_URL}${item.image_url}`}
             width={600}
             height={600}
             alt='msty image'
-            
-            className="transition-transform duration-300 group-hover:scale-110 aspect-[5:3]"
+
+            className="transition-transform duration-300 group-hover:scale-110 aspect-[5/3]"
           />
         </div>
         <div className="pr-[15px] transition-[padding-left] duration-300 ease-in-out group-hover:pl-[15px] ">
@@ -23,10 +23,10 @@ function Blogcard({ item, index }) {
 
           <div className="flex justify-between group-hover:pl-[15px] pr-[15px]">
             <h5 className='text-[#121212] text-[18px]  transition-all duration-300 mb-6 '>{new Date(item.created_at).toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  })}</h5>
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+            })}</h5>
             <h6 className='text-[#121212]  text-sm  transition-all duration-300 mb-6 underline'>Read More</h6>
           </div>
         </div>

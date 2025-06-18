@@ -36,9 +36,9 @@ export const data=[
         
     },
     {
-        link:lnk5,
+        link:"https://satinneodimensions.com/",
         img:img5,
-        name: "Rendrely",
+        name: "Satin New Dimension",
        
     },
     {

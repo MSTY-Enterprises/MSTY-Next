@@ -12,6 +12,12 @@ import Faq from "./_section/Faq";
 import Blog from "./_section/Blog";
 import Contact from "./_section/Contact";
 
+export const metadata = {
+  title: "MSTY Enterprises | Web & Digital Marketing Solution for Grow ",
+  description: "MSTY Enterprises provides professional web solutions, social media management, website maintenance, and digital marketing to help businesses expand online. ",
+};
+
+
 export default function Home() {
   return (
     <main>

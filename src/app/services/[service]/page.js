@@ -8,6 +8,20 @@ import UiServices from './_section/UiServices'
 import Process from './_section/Process'
 import Contact from '@/app/_section/Contact'
 
+export function generateMetadata({ params }) {
+  const { service } = params;
+  const capitalizeFirstLetter = (str) => {
+    return str.split('%20').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  };
+  let services = capitalizeFirstLetter(service);
+
+  return {
+    title: services + ' | Web & Digital Marketing Solution for Grow ',
+    description: `Explore our ${services} services and discover the best features we offer.`,
+  };
+}
+
+
 const page = () => {
   return (
     <>

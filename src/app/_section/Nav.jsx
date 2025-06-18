@@ -29,7 +29,8 @@ function Nav() {
   return (
     <>
       {/* Top Notification Bar */}
-      <div className="bg-[#55d0ff] text-slate-700 py-3 px-4 text-sm max-sm:hidden">
+      <div className="relative overflow-hidden  mb-12  max-sm:hidden">
+      <div className="bg-[#55d0ff] text-slate-700 py-3 px-4 text-sm max-sm:hidden fixed w-full z-[999] mb-3.5 ">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-2">
             <IoIosNotificationsOutline className="w-6 h-6" />
@@ -38,7 +39,7 @@ function Nav() {
             </span>
           </div>
           <ul className="flex flex-col sm:flex-row gap-2 sm:gap-6 font-medium text-sm">
-            <li className="flex items-center gap-2">
+            <li className="flex items-center gap-2 ">
               <HiOutlineMailOpen className="w-5 h-5" />
               <a
                 href="mailto:info@mstyenterprises.com"
@@ -55,6 +56,7 @@ function Nav() {
             </li>
           </ul>
         </div>
+      </div>
       </div>
 
       {/* Main Nav */}
@@ -93,7 +95,7 @@ function Nav() {
 
           {/* Mobile Hamburger Button */}
           <button
-            className="md:hidden text-2xl text-black"
+            className="md:hidden text-2xl text-black z-[999999]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >

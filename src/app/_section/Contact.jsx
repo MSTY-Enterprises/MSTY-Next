@@ -57,9 +57,13 @@ function Contact() {
         {/* Left Section */}
         <div>
           <div className="max-w-xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl text-white font-extrabold mb-6">
-              Let’s start a project together.
-            </h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 
+               text-white 
+               ">
+  Let’s start a project together.
+</h1>
+
+
             <p className="text-lg text-[#b4b4b4] leading-7 mb-6">
               We’d love to hear from you! Share your ideas, ask questions,
               or simply say hello. Let’s connect and explore how we can make
@@ -67,13 +71,19 @@ function Contact() {
             </p>
 
             <ul className="text-white text-lg space-y-3">
-              <li>
-                <a href="tel:+919910741417" className="hover:underline">
+              <li className="mb-4.5">
+                <h2 className="text-[15px] text-[#b4b4b4] font-medium mb-2.5 max-sm:mb-0.5">Phone No & Whatshapp No</h2>
+                <a  href="tel:+919910741417" className=" max-sm:text-2xl hover:bg-gradient-to-r hover:from-[#2684ff] hover:to-[#00ace5] 
+               hover:bg-clip-text hover:text-transparent 
+               transition-all duration-500 ease-in-out text-3xl ">
                   +91 99107 41417
                 </a>
               </li>
               <li>
-                <a href="mailto:info@mstyenterprises.com" className="hover:underline">
+              <h2 className="text-[15px] text-[#b4b4b4] font-medium mb-2.5 max-sm:mb-0.5">Email ID</h2>
+                <a href="mailto:info@mstyenterprises.com" className="hover:bg-gradient-to-r hover:from-[#2684ff] hover:to-[#00ace5] 
+               hover:bg-clip-text hover:text-transparent 
+               transition-all duration-500 ease-in-out  text-3xl max-sm:text-2xl ">
                   info@mstyenterprises.com
                 </a>
               </li>

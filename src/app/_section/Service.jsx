@@ -8,7 +8,7 @@ import Link from 'next/link';
 function Service() {
   return (
     <>
-      <div className='container mx-auto mb-15 p-2'>
+      <div className='container mx-auto mb-15 p-2   '>
         <div className="flex justify-between items-center max-sm:flex-col max-sm:items-start">
           <div className='lft'>
             <h3 className=" text-[#121212] rounded-4xl w-fit text-[16px] mb-3 ">

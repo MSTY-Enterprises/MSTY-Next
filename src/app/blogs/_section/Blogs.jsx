@@ -10,7 +10,7 @@ function Blogs() {
 
   return (
     <>
-      <div className="container mx-auto py-10   md:p-2">
+      <div className="container mx-auto py-10   md:p-2 max-sm:p-2">
         <h1 className="text-5xl max-sm:text-2xl text-[#121212] font-extrabold mb-3 leading-tight pt-10">
           Shaping the Future of Digital Design & Innovation
         </h1>
