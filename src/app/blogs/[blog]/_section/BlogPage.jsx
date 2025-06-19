@@ -18,7 +18,7 @@ export default function BlogPage() {
   return (
     <section className='container mx-auto overflow-hidden'>
       <div className='relative overflow-hidden flex max-sm:flex-col justify-between lg:flex-row gap-6'>
-        <aside className="sticky top-0 bg-sky-50 w-3/12 border border-gray-300 rounded-lg shadow-lg py-4 px-4 mt-10 h-full lg:h-screen">
+        <aside className="sticky top-0 bg-sky-50 w-3/12 lg:w-full border border-gray-300 rounded-lg shadow-lg py-4 px-4 mt-10 h-full lg:h-screen">
           <Link href="/blogs">
             <div className="flex items-center gap-2 font-bold text-sm py-2 lg:text-base text-blue-800 cursor-pointer">
               <BiArrowBack /> Back to Blogs
