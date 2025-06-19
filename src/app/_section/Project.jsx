@@ -22,7 +22,7 @@ function Project() {
             <div className="rgt max-sm:mb-5 ">
               <div className=" bg-[#55d0ff]  ">
                 <Link
-                  href="/Portfolio"
+                  href="/portfolio"
                   className=" flex items-center text-white gap-2 btn  font-normal bg-[#1b1b1b] group  p-2  pr-6.5 get-in-touch-button relative  border border-neutral-700  transition-all duration-200 ease-in text-lg hover:text-black overflow-hidden z-10 "
                 >
                   See More{" "}

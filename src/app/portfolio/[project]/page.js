@@ -12,7 +12,9 @@ const page = ({params}) => {
  
   const { project } = params
 
-  const projectData = data.find(item => item.name === project);
+  const decodedProject = project.replace(/%20/g, ' ')
+
+  const projectData = data.find(item => item.name === decodedProject);
 
   return (
    <div>
