@@ -27,9 +27,9 @@ export const data=[
         
     },
     {
-        link:lnk4,
+       
         img:img4,
-        name: "Retro Inspired Product",
+        name: "ACE Electricals",
         
     },
     {

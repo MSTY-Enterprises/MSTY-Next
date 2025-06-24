@@ -14,10 +14,10 @@ function Testimonials() {
         <h3 className="text-[#121212] rounded-4xl w-fit text-[16px] mb-3">
           OUR TESTIMONIALS
         </h3>
-        <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-9">
+        <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-9" >
           What Our Clients Say
         </h1 >
-        <Swiper
+        <Swiper 
           breakpoints={{
             640: {
               slidesPerView: 1,

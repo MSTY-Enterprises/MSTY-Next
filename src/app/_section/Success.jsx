@@ -14,7 +14,7 @@ function Success() {
           <h3 className="text-[#121212] text-sm font-medium bg-[#f3f3f3] px-4 py-1 rounded-full w-fit mb-2">
             OUR STEPS
           </h3>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#121212]">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-[#121212]" >
             Our Methodology for Success
           </h1>
         </div>
@@ -23,7 +23,8 @@ function Success() {
         <div className="flex flex-col-reverse lg:flex-row-reverse gap-12 items-center">
           {/* Right Side: Cards */}
           <div className="w-full lg:w-1/2 space-y-6">
-            <ul>
+            <ul 
+    >
               {data.map((item, index) => (
                 <Successcard key={index} item={item} />
               ))}
@@ -31,7 +32,7 @@ function Success() {
           </div>
 
           {/* Left Side: Image Circle */}
-          <div className="w-full lg:w-1/2 flex justify-center relative">
+          <div className="w-full lg:w-1/2 flex justify-center relative" >
             {/* Rotating Icon */}
             <Image
               src={icon}

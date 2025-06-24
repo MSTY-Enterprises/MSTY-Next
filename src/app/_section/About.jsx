@@ -5,10 +5,10 @@ import Image from "next/image";
 function About() {
   return (
     <div className="container mx-auto mt-15 mb-15 p-2">
-      <h3 className="text-[#121212] rounded-4xl w-fit text-[16px] mb-3">
+      <h3 className="text-[#121212] rounded-4xl w-fit text-[16px] mb-3" >
         ABOUT US
       </h3>
-      <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-3.5">
+      <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-3.5" >
         We Are Here to Give You Effective Ideas
       </h1>
       <p className="text-[16px] max-sm:text-[14px] leading-7 font-medium">
@@ -26,7 +26,7 @@ function About() {
         help engage with real potential clients and profitability.
       </p>
 
-      <div className="relative mt-5 rounded-2xl overflow-hidden group shadow-lg transition-shadow duration-500 hover:shadow-2xl">
+      <div className="relative mt-5 rounded-2xl overflow-hidden group shadow-lg transition-shadow duration-500 hover:shadow-2xl" >
         <Image
           src={abt}
           alt="About"

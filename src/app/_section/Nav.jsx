@@ -29,8 +29,8 @@ function Nav() {
   return (
     <>
       {/* Top Notification Bar */}
-      <div className="relative overflow-hidden  mb-12  max-sm:hidden">
-      <div className="bg-[#55d0ff] text-slate-700 py-3 px-4 text-sm max-sm:hidden fixed w-full z-[999] mb-3.5 ">
+      <div className="relative overflow-hidden  mb-12  max-sm:hidden " >
+      <div className="bg-[#55d0ff] text-slate-700 py-3 px-4 text-sm max-sm:hidden fixed w-full z-[999] mb-3.5 " >
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-2">
             <IoIosNotificationsOutline className="w-6 h-6" />
@@ -60,7 +60,7 @@ function Nav() {
       </div>
 
       {/* Main Nav */}
-      <header className="border-b border-[#e3e3e3] py-6 px-4 relative z-50">
+      <header className="border-b border-[#e3e3e3] py-6 px-4 relative z-50 "  >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <div>

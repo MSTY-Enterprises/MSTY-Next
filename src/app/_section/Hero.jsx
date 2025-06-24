@@ -26,7 +26,8 @@ function Hero() {
       <div className="container px-2 mx-auto max-sm:px-2">
         <div className="main  flex max-sm:flex-col md:flex-col lg:flex-row justify-between items-center mt-10 md:mb-15 max-sm:mb-7 ">
           <div className="lft">
-            <h1 className="text-[56px] max-sm:text-[32px] font-bold text-[#1b1b1b] leading-tight max-sm:mb-6 mb-10">
+            <h1 className="text-[56px] max-sm:text-[32px] font-bold text-[#1b1b1b] leading-tight max-sm:mb-6 mb-10"data-aos="fade-right"
+      data-aos-duration="3000">
               Global Website design
               <br className=" max-sm:hidden" /> agency digital partner
               <br className=" max-sm:hidden" /> for{" "}
@@ -46,7 +47,8 @@ function Hero() {
               </span>
             </h1>
 
-            <div className="scnd flex max-sm:flex-col max-sm:justify-center items-center gap-4">
+            <div className="scnd flex max-sm:flex-col max-sm:justify-center items-center gap-4" data-aos="fade-"
+      data-aos-duration="3000">
               <div className="bt w-fit  max-sm:w-full  max-sm:px-8">
                 <a
                   href="tel:+919910741417"

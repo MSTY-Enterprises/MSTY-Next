@@ -125,10 +125,10 @@ function Footer() {
               />
             </a>
 
-            <p className="text-[16px] leading-relaxed text-[#a1a1a1] text-wrap max-sm:max-w-sm">
-              Mysty Enterprise is a global UI/UX design agency <br /> that
-              boosts brand value with user-friendly, <br /> effective designs
-              for web, mobile, <br /> and SaaS platforms.
+            <p className="text-[16px] leading-relaxed text-[#a1a1a1] text-wrap max-sm:max-w-[70%]">
+              Mysty Enterprise is a global UI/UX design agency that boosts brand
+              value with user-friendly, effective designs for web, mobile, and
+              SaaS platforms.
             </p>
 
             <div className="flex flex-wrap gap-4 mt-4">
@@ -137,9 +137,7 @@ function Footer() {
                   key={idx}
                   href={item.link}
                   target="blank"
-                  className="hover:bg-gradient-to-r hover:from-[#2684ff] hover:to-[#00ace5] 
-            hover:bg-clip-text hover:text-blue-400
-            transition-all duration-100 ease-in-out"
+                  className="hover:bg-gradient-to-r hover:from-[#2684ff] hover:to-[#00ace5] hover:bg-clip-text hover:text-blue-400 transition-all duration-100 ease-in-out"
                 >
                   <item.icon className="text-4xl" />
                 </Link>

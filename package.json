@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "matter-js": "^0.20.0",
     "motion": "^12.15.0",
     "msty-next": "file:",

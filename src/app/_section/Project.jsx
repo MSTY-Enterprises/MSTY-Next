@@ -7,14 +7,14 @@ import Link from "next/link";
 function Project() {
   return (
     <>
-      <div className="bg-[#f2f2f2] pt-16 pb-15 mb-16 p-2">
+      <div className="bg-[#f2f2f2] pt-16 pb-15 mb-16 p-2" >
         <div className="container mx-auto ">
           <div className="flex justify-between items-center max-sm:flex-col max-sm:items-start">
             <div className="lft">
               <h3 className=" text-[#121212] rounded-4xl w-fit text-[16px] mb-3 ">
                 PROJECT
               </h3>
-              <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-3.5">
+              <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-3.5" >
                 Some Our Recent Works
               </h1>
             </div>
