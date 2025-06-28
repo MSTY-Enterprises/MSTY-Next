@@ -21,9 +21,11 @@ function Nav() {
     { id: 1, name: "Home", link: "/" },
     { id: 2, name: "About", link: "/about" },
     { id: 3, name: "Services", link: "/services" },
-    { id: 4, name: "Portfolio", link: "/portfolio" },
-    { id: 5, name: "Blogs", link: "/blogs" },
-    { id: 6, name: "Careers", link: "/career" },
+    { id: 4, name: "Sales & Discount", link: "/Offer" },
+    { id: 5, name: "Portfolio", link: "/portfolio" },
+    
+    { id: 6, name: "Blogs", link: "/blogs" },
+    { id: 7, name: "Careers", link: "/career" },
   ];
 
   return (

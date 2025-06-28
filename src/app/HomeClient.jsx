@@ -17,6 +17,7 @@ import Testimonials from "@/app/_section/Testimonials";
 import Faq from "@/app/_section/Faq";
 import Blog from "@/app/_section/Blog";
 import Contact from "@/app/_section/Contact";
+import PricingPlans from './_section/PricingPlans';
 
 export default function HomeClient() {
   useEffect(() => {
@@ -35,6 +36,7 @@ export default function HomeClient() {
       <About />
       <Service />
       <Project />
+      <PricingPlans />
       <Success />
       <Testimonials />
       <Faq />

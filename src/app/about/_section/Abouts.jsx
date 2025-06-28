@@ -14,11 +14,13 @@ function Abouts() {
     <>
       <div className="frst pt-14 pb-14 bg-[#f1f1f1] mb-18">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-10 leading-tight">
+        <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-10 leading-tight">
             We create design for businesses with our
             <br className="max-sm:hidden md:hidden" /> elevated digital
             experiences
-          </h1>
+          </h1> 
+
+
           <div className="relative mt-5 mb-10 overflow-hidden group shadow-lg transition-shadow duration-500 hover:shadow-2xl">
             <Image
               src={img}
