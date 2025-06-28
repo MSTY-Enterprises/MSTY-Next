@@ -163,11 +163,11 @@ const PricingPlans = () => {
       <h2 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-10">
         Flexible Plans. Powerful Results
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 ">
         {plans.map((plan) => (
           <div
             key={plan.title}
-            className={`rounded-2xl border p-6 shadow-lg transition hover:scale-[1.02] duration-300 ${
+            className={`h-fit rounded-2xl border p-6 shadow-lg transition hover:scale-[1.02] duration-300 ${
               plan.popular ? 'border-yellow-500 ring-2 ring-yellow-400 bg-yellow-50' : 'bg-white'
             }`}
           >
