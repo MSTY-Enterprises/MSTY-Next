@@ -217,7 +217,7 @@ function Footer() {
                 <span
                   className="block hover:bg-gradient-to-r hover:from-[#2684ff] hover:to-[#00ace5] 
             hover:bg-clip-text hover:text-transparent 
-            transition-all duration-500 ease-in-out max-sm:max-w-xl text-wrap max-sm:max-w-sm"
+            transition-all duration-500 ease-in-out max-sm:max-w-xl text-wrap   "
                 >
                   33/33A, Tower No. 6, 3rd Floor, <br /> Rama Road, Industrial
                   Area,

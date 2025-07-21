@@ -12,7 +12,7 @@ export const BlogProvider = ({ children }) =>{
 
     const fetchBlogs = async () => {
         try {
-          const response = await fetch('https://api.mstyenterprises.com/api/blogs');
+          const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blogs`);
           if (!response.ok) {
             throw new Error('Failed to fetch data');
           }

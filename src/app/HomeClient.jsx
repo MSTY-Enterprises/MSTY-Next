@@ -1,9 +1,9 @@
 // components/HomeClient.jsx
 "use client";
 
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Hero from "@/app/_section/Hero";
 import Logo from "@/app/_section/Logo";
@@ -17,7 +17,8 @@ import Testimonials from "@/app/_section/Testimonials";
 import Faq from "@/app/_section/Faq";
 import Blog from "@/app/_section/Blog";
 import Contact from "@/app/_section/Contact";
-import PricingPlans from './_section/PricingPlans';
+import PricingPlans from "./_section/PricingPlans";
+import NeedWeb from "./_section/NeedWeb";
 
 export default function HomeClient() {
   useEffect(() => {
@@ -37,6 +38,7 @@ export default function HomeClient() {
       <Service />
       <Project />
       <PricingPlans />
+      <NeedWeb />
       <Success />
       <Testimonials />
       <Faq />

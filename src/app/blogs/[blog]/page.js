@@ -5,7 +5,7 @@ export async function generateMetadata({ params }) {
   const blogSlug = params.blog;
 
   try {
-    const res = await fetch(`https://api.mstyenterprises.com/api/blog/${blogSlug}`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blog/${blogSlug}`);
     if (!res.ok) throw new Error('Failed to fetch');
 
     const blog = await res.json();

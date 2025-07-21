@@ -181,9 +181,9 @@ const PricingPlans = () => {
                 </li>
               ))}
             </ul>
-            <button className="w-full cursor-pointer bg-black text-white py-2 rounded-xl hover:bg-[#0ea7e2] transition-all duration-200 ease-in">
-              Choose {plan.title}
-            </button>
+            <a href='#contact'>   <button className="w-full cursor-pointer bg-black text-white py-2 rounded-xl hover:bg-[#0ea7e2] transition-all duration-200 ease-in">
+              Know More
+            </button></a>
           </div>
         ))}
       </div>

@@ -54,7 +54,7 @@ function Contact() {
   };
 
   return (
-    <section className="bg-[#101010] pt-16 pb-16 px-4">
+    <section className="bg-[#101010] pt-16 pb-16 px-4" id="contact">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
         {/* Left Section */}
         <div>
