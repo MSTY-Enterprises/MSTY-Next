@@ -3,7 +3,7 @@
 
 import React from "react";
 
-function Contact() {
+function Contact({ heading = "Let’s start a project together." }) {
   const [formData, setFormData] = React.useState({
     name: '',
     mobile: '',
@@ -60,7 +60,7 @@ function Contact() {
         <div>
           <div className="max-w-xl">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-white">
-              Let’s start a project together.
+            {heading}
             </h1>
             <p className="text-lg text-[#b4b4b4] leading-7 mb-6">
               We’d love to hear from you! Share your ideas, ask questions,
@@ -149,4 +149,5 @@ function Contact() {
 }
 
 export default Contact;
+
 

@@ -1,21 +1,17 @@
-import Needwebcard from '@/utilites/Needwebcard';
-import React from 'react';
-import { data } from '@/store/NeedWebdata';
+import React from "react";
+import Need from "./_section/Need";
 
-const page = () => {
-  return (
-    <div className="container mx-auto px-4 pb-10">
-      <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-10 leading-tight pt-10">
-        Design Isn’t Just About Looking Good — It’s About Making Your Business Stand Out Online
-      </h1>
-
-      <ul>
-        {data.map((item, index) => (
-          <Needwebcard key={index} item={item} index={index} />
-        ))}
-      </ul>
-    </div>
-  );
+export const metadata = {
+  title: "Why Every Business Needs a Custom Website, SEO & Paid Ads in 2025 | MSTY Enterprises",
+  description:
+    "Discover how a strong online presence powered by custom website design, SEO, paid ads, and data-driven strategies can help your business grow in 2025. MSTY Enterprises helps you stand out online and convert traffic into leads.",
 };
+
+function page() {
+  return <>
+  <Need />
+  
+  </>;
+}
 
 export default page;

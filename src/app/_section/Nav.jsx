@@ -26,6 +26,7 @@ function Nav() {
     
     { id: 6, name: "Blogs", link: "/blogs" },
     { id: 7, name: "Careers", link: "/career" },
+    { id: 8, name: "Get Quote", link: "/Quote" },
   ];
 
   return (
