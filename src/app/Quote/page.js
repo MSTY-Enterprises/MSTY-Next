@@ -10,7 +10,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-    <Contact heading="Request a Custom Quote Today" />
+    <Contact heading="Get Quote" />
     </>
   )
 }

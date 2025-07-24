@@ -2,7 +2,8 @@ import React from 'react'
 import BlogPage from './_section/BlogPage';
 
 export async function generateMetadata({ params }) {
-  const blogSlug = params.blog;
+  const { blog } = await params;
+  const blogSlug = blog;
 
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blog/${blogSlug}`);

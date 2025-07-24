@@ -6,7 +6,7 @@ import img from "@/assets/images/offer-bnr.jpg";
 import Pagecard from "@/utilites/Pagecard";
 import { data, text } from "../../../store/Pagedata";
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from 'swiper/modules';
@@ -16,9 +16,33 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 const Offer = () => {
+  const [offer, setOffer] = useState([]);
+
+  const fetchOffer = async () => {
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/offers`);
+      if (!response.ok) {
+        throw new Error('Failed to fetch');
+      }
+      const data = await response.json();  
+      setOffer(data);  
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    fetchOffer();
+  }, []); 
+
+  
+
+  
+
+
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 mb-15">
-      <h1 className="text-4xl sm:text-5xl text-[#121212] mt-10 font-extrabold mb-0 leading-tight max-sm:mt-10 max-sm:mb-12">
+      <h1 className="text-4xl sm:text-5xl text-[#121212] mt-10 font-extrabold mb-0 leading-tight max-sm:mt-10 max-sm:mb-4">
       Looking for a Website That’s Practically a Steal? 
       
       </h1>
@@ -46,25 +70,40 @@ const Offer = () => {
       
 
       <Swiper
-  slidesPerView={3}
   spaceBetween={30}
-  pagination={{
-    clickable: true,
-  }}
+  pagination={{ clickable: true }}
   autoplay={{
-    delay: 2000, // 3 seconds
+    delay: 2000,
     disableOnInteraction: false,
   }}
   loop={true}
   modules={[Pagination, Autoplay]}
   className="mySwiper"
+  breakpoints={{
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 1.2,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1280: {
+      slidesPerView: 3,
+    },
+  }}
 >
-  {data.map((item, index) => (
+  {offer.map((item, index) => (
     <SwiperSlide key={index} className="p-8">
       <Pagecard item={item} />
     </SwiperSlide>
   ))}
 </Swiper>
+
     </div>
   );
 };

@@ -1,8 +1,15 @@
+'use client'
 import Needwebcard from '@/utilites/Needwebcard';
 import React from 'react';
 import { data } from '@/store/NeedWebdata';
+import { useNeeds } from '@/hooks/NeedsContext';
 
 const Need = () => {
+
+  const { needs } = useNeeds();
+  
+  console.log(needs);
+
   return (
     <div className="container mx-auto px-4 pb-10">
       <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-10 leading-tight pt-10">
@@ -10,7 +17,7 @@ const Need = () => {
       </h1>
 
       <ul>
-        {data.map((item, index) => (
+        {needs.map((item, index) => (
           <Needwebcard key={index} item={item} index={index} />
         ))}
       </ul>

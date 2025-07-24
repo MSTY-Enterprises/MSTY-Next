@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,8 +17,8 @@ const Needwebcard = ({ item, index }) => {
         <aside className="relative shrink-0">
           <div className="overflow-hidden rounded-xl border border-gray-200">
             <Image
-              src={item.img}
-              alt={item.head}
+              src={`${process.env.NEXT_PUBLIC_IMG_URL}${item.image}`}
+              alt={item.title}
               width={576}
               height={600}
               className="object-cover"
@@ -29,19 +28,19 @@ const Needwebcard = ({ item, index }) => {
 
         <aside className="flex-1">
           <h1 className="text-4xl font-bold underline text-[#1b1b1b] mb-5 max-sm:text-5xl max-sm:leading-[54px]">
-            {item.head}
+            {item.title}
           </h1>
           <p
             className="text-[1.125rem] text-[#262626] leading-8 font-medium mb-4"
-            dangerouslySetInnerHTML={{ __html: item.para }}
+            dangerouslySetInnerHTML={{ __html: item.description }}
           />
           <div className=" bg-[#55d0ff] w-fit  ">
             <Link
-              href="https://wa.me/919910741417?"
-              target="_blank"
+              href={`/need/${item.slug}`}
+              
               className=" flex items-center text-white gap-2 btn  font-normal bg-[#1b1b1b] group  p-2  pr-6.5 get-in-touch-button relative  border border-neutral-700  transition-all duration-200 ease-in text-lg hover:text-black overflow-hidden z-10 "
             >
-              Connect With Us{" "}
+              Read More{" "}
               <GoArrowUpRight className="w-[18px] h-[18px] rotate-0" />
             </Link>
           </div>

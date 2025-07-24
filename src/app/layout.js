@@ -4,6 +4,7 @@ import Nav from "./_section/Nav";
 import Footer from "./_section/Footer";
 import { BlogProvider } from "@/hooks/BlogContext";
 import WhatsAppbutton from "./_section/WhatsAppbutton";
+import { NeedsProvider } from "@/hooks/NeedsContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,13 +32,16 @@ export default function RootLayout({ children }) {
             gtag('config', 'AW-17000850069');
           `}
         </script>
+        
       </head>
       <body className={`${inter.className} antialiased relative`}>
         <WhatsAppbutton />
         <BlogProvider>
+        <NeedsProvider>
           <Nav />
           {children}
           <Footer />
+        </NeedsProvider>
         </BlogProvider>
       </body>
     </html>

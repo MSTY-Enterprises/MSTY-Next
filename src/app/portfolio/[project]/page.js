@@ -8,9 +8,9 @@ export const metadata = {
   title: "Project | Web & Digital Marketing Solution for Grow ",
   description: "MSTY Enterprises provides professional web solutions, social media management, website maintenance, and digital marketing to help businesses expand online. ",
 };
-const page = ({params}) => {
+const page = async ({params}) => {
  
-  const { project } = params
+  const { project } = await params
 
   const decodedProject = project.replace(/%20/g, ' ')
 
