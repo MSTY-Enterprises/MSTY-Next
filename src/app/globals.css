@@ -147,3 +147,7 @@ table tbody tr:hover {
 table tbody tr:nth-child(even) {
   background-color: #fafafa;
 }
+
+.bg-img img{
+  margin: 1rem auto;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import Contact from '../_section/Contact'
+import ThankYouPage from '@/app/_section/ThankYouPage';
 
 
 export const metadata = {
@@ -10,7 +10,7 @@ export const metadata = {
 const page = () => {
   return (
     <>
-    <Contact/>
+      <ThankYouPage />
     </>
   )
 }

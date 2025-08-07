@@ -15,6 +15,26 @@ export default function BlogPage() {
     setCurrentBlogSlug(blog);
   }, [blog, setCurrentBlogSlug]);
 
+  if(blogData){
+    console.log(blogData.content)
+  }
+  const updatedContent = blogData?.content.map((block) => {
+    // Check if the block is an image type and contains a URL to update
+    if (block.type === 'paragraph') {
+      return {
+        ...block,
+        data: {
+          ...block.data,
+          content: block.data.content.replace('/storage/', 'https://api.mstyenterprises.com/storage/')
+          
+        }
+      };
+    }
+  
+    // If it's a paragraph or heading or any other type, return as-is
+    return block;
+  });
+  console.log(updatedContent);
   return (
     <section className='container mx-auto overflow-hidden'>
       <div className='relative overflow-hidden flex max-sm:flex-col justify-between lg:flex-row gap-6'>
@@ -27,7 +47,7 @@ export default function BlogPage() {
           <h2 className="text-lg lg:text-2xl font-semibold mb-4">Table of Contents</h2>
 
           <ul className="list-none bg-white py-2 rounded-2xl border border-[#979797]">
-            {blogData?.content?.map((item, index) =>
+            {updatedContent?.map((item, index) =>
               item.type === 'heading' ? (
                 <li key={index} className="text-[14px] pb-2 px-1 ml-2">
                   <a href={`#${item.data.content}`} className="hover:text-black text-gray-600">
@@ -57,13 +77,13 @@ export default function BlogPage() {
               </span>
             </div>
 
-            {blogData?.content?.map((item, index) => {
+            {updatedContent?.map((item, index) => {
               switch (item.type) {
                 case 'paragraph':
                   return (
                     <p
                       key={index}
-                      className="text-gray-800 text-[16px] lg:text-base font-regular leading-7"
+                      className="text-gray-800 text-[16px] lg:text-base font-regular leading-7 bg-img"
                       dangerouslySetInnerHTML={{ __html: item.data.content }}
                     />
                   );
