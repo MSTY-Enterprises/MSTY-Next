@@ -3,11 +3,11 @@ import Link from 'next/link'
 
 
 
-function Blogcard({ item, index }) {
+function  Blogcard({ item, index }) {
 
   return (
     <li className=' hover:bg-[#e1e1e1] group max-sm:w-full lg:w-8/25 md:w-2/5  rounded-2xl    '>
-      <Link href={`/blogs/${item.slug}`}>
+      <Link href={`/blogs/${item.slug}`} target='_blank'>
         <div className="img mb-6 overflow-hidden rounded-2xl group-hover:rounded-b-none">
           <Image
             src={`${process.env.NEXT_PUBLIC_IMG_URL}${item.image_url}`}

@@ -234,6 +234,7 @@ function Footer() {
           &copy; {new Date().getFullYear()} MSTY Enterprises private limited.
           All Rights Reserved.
         </div>
+              <div className="Developed by Parvinder Singh. Email: singhparvinder1906@gmail.com"></div>
       </footer>
     </>
   );

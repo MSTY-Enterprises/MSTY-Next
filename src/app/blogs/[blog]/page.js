@@ -26,7 +26,6 @@ export async function generateMetadata({ params }) {
         ],
       },
       other: {
-        // For adding structured data via script manually (if needed)
         'script[type="application/ld+json"]': JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",

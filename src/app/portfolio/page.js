@@ -1,5 +1,7 @@
 import React from 'react'
-import Project from './_section/Project'
+
+
+import Project from '../_section/Project';
 
 
 export const metadata = {

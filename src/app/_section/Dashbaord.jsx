@@ -1,13 +1,14 @@
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
-import { data } from "@/store/Projectdata";
-import Projectcard from "@/utilites/Projectcard";
-import Link from "next/link";
+import { data } from "@/store/Dashboarddata";
 
-function Project() {
+import Link from "next/link";
+import Dashboardcard from "@/utilites/Dashboardcard";
+
+function Dashboard() {
   return (
     <>
-      <div className="bg-[#f2f2f2] pt-16 pb-15 mb-16 p-2" >
+      <div className="bg-[#f2f2f2] pt-16 pb-15  p-2" >
         <div className="container mx-auto ">
           <div className="flex justify-between items-center max-sm:flex-col max-sm:items-start">
             <div className="lft">
@@ -15,13 +16,13 @@ function Project() {
                 PROJECT
               </h3>
               <h1 className="text-5xl max-sm:text-3xl text-[#121212] font-extrabold mb-3.5" >
-                Some Our Recent Works
+                Some Our Dashboard Works
               </h1>
             </div>
 
           <div className=" bg-[#55d0ff]  ">
               <Link
-                href="/portfolio/project-section"
+                href="/Dashboard"
                 className=" flex items-center text-white gap-2 btn  font-normal bg-[#1b1b1b] group  p-2  pr-6.5 get-in-touch-button relative  border border-neutral-700  transition-all duration-200 ease-in text-lg hover:text-black overflow-hidden z-10 "
               >
                 See More{" "}
@@ -33,7 +34,7 @@ function Project() {
           <div className="proj w-full">
             <ul className="flex flex-wrap w-full items-center justify-center gap-4 mt-4  ">
               {data.slice(0, 6).map((item, index) => (
-                <Projectcard key={index} item={item} />
+                <Dashboardcard key={index} item={item} />
               ))}
             </ul>
           </div>
@@ -43,4 +44,4 @@ function Project() {
   );
 }
 
-export default Project;
+export default Dashboard;

@@ -19,6 +19,7 @@ import Blog from "@/app/_section/Blog";
 import Contact from "@/app/_section/Contact";
 import PricingPlans from "./_section/PricingPlans";
 import NeedWeb from "./_section/NeedWeb";
+import Dashboard from "./_section/Dashbaord";
 
 export default function HomeClient() {
   useEffect(() => {
@@ -38,6 +39,7 @@ export default function HomeClient() {
       <Service />
       <Project />
       <PricingPlans />
+      <Dashboard />
       <NeedWeb />
       <Success />
       <Testimonials />
