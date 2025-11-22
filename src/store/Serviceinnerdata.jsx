@@ -66,10 +66,10 @@ export const datas = [
   },
 
   {
-    lnk: "/services/ContentWritting",
-    head: "Content Writting",
+    lnk: "/services/ContentWriting",
+    head: "Content Writing",
     para: "Crafting compelling content that captivates audiences and drives meaningful engagement.",
-    head2: "COntent Writting Services",
+    head2: "Content Writing Services",
     list: [
       "SEO-Optimized Content",
       "Conversion-Focused Copy",
