@@ -28,7 +28,7 @@ function Uibnrcard({ item, index }) {
           </div>
 
           <div className="rgt  w-7/13 max-sm:w-full md:w-full max-md:w-full">
-            <Image src={item.img} />
+            <Image src={item.img} alt="image" />
           </div>
         </div>
       </div>

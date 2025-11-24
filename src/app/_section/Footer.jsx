@@ -55,7 +55,7 @@ function Footer() {
     {
       id: 2,
       name: "Content Writing",
-      link: "/services/ContentWritting",
+      link: "/services/ContentWriting",
     },
     {
       id: 3,

@@ -7,8 +7,8 @@ function Fallingcard() {
     <>
       <div className="flex items-center justify-center p-6 ">
         <FallingText
-          text="Creative Visions UI/UX Digital Marketing Website Design Business Solution Content Writting"
-          highlightWords={["Creative Visions", "UI/UX", "Digital Marketing", "Website Design", "Business Solution", "Content Writting"]}
+          text="Creative Visions UI/UX Digital Marketing Website Design Business Solution Content Writing"
+          highlightWords={["Creative Visions", "UI/UX", "Digital Marketing", "Website Design", "Business Solution", "Content Writing"]}
           trigger="scroll"
           backgroundColor="transparent"
           wireframes={false}

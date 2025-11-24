@@ -13,7 +13,7 @@ function Uibnr() {
   const item = servicesdata[service].bnr;
 
   return (
-    <div classname=" ">
+    <div className=" ">
       <Uibnrcard item={item} />
     </div>
   );

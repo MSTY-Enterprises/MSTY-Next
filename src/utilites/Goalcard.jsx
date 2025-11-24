@@ -14,7 +14,7 @@ function Goalcard({ item, index }) {
         <p className="text-[1.125rem] font-medium">{item.para}</p>
         <ul className="mt-4 text-[1.5rem] max-sm:text-[18px] lg:text-[18px] xl:text-[1.3rem]">
           {item.list.map((item, index) => (
-            <li className=" flex justify-between items-center py-3 border-b-1 border-b-[#e4e4e4] ">
+            <li key={index} className=" flex justify-between items-center py-3 border-b-1 border-b-[#e4e4e4] ">
               <span>
                 <span className="text-[18px] max-sm:text-[16px] text-[#7e7e81] mr-3 lg:text-[16px] xl:text-[17px]">0{index + 1}</span>
                 <span >{item}</span>

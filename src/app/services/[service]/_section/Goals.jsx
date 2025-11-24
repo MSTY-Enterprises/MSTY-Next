@@ -8,7 +8,6 @@ import { useParams } from "next/navigation";
 function Goals() {
   const { servicesdata } = useStore();
   const { service } = useParams();
-
   const item = servicesdata[service].goals;
 
   return (

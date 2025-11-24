@@ -18,7 +18,7 @@ function Processcard({ item, index }) {
         </p>
         <ul className="text-[1.125rem] font-medium text-[#1b1b1b] flex flex-col mt-3.5 ">
           {item.pnt.map((item, index) => (
-            <li className=" flex items-center py-1   ">
+            <li key={index} className=" flex items-center py-1   ">
               <FaCircle className=" mr-5 w-[10px]" />
               <span className=" ">{item}</span>
             </li>
