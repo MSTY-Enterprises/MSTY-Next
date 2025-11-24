@@ -404,7 +404,7 @@ export const Allservicesdata = {
     ],
   },
 
-  ContentWriting: {
+  ContentWritting: {
     bnr: {
       head: "Content Writing Services",
       para: "Msty Enterprise helps startups craft powerful content that speaks, sells, and scales. From blogs to brand stories, our content writing ensures clarity, impact, and connection at every stage of growth.",

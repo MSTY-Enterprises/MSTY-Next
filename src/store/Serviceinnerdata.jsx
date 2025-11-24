@@ -66,7 +66,7 @@ export const datas = [
   },
 
   {
-    lnk: "/services/ContentWriting",
+    lnk: "/services/ContentWritting",
     head: "Content Writing",
     para: "Crafting compelling content that captivates audiences and drives meaningful engagement.",
     head2: "Content Writing Services",
